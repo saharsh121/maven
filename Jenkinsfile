@@ -2,16 +2,10 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "saharsh121/maven-app"
+        DOCKER_IMAGE = "saharsh121/maven"
     }
 
     stages {
-
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/saharsh121/maven.git'
-            }
-        }
 
         stage('Build with Maven') {
             steps {
