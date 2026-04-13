@@ -1,8 +1,12 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven'
+    }
+
     environment {
-        DOCKER_IMAGE = "saharsh121/maven"
+        DOCKER_IMAGE = "saharsh1211/maven"
     }
 
     stages {
